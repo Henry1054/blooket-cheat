@@ -11,7 +11,7 @@ sold = 0
 class User:
     def __init__(self, u):
         self.tokens = u['tokens']
-        self.name = u['name']
+        self.name = u['Henryme1']
         self.id = u['_id']
 
 
@@ -20,8 +20,8 @@ def login(method, username, password):
         return 'not supported yet', None
     else:
         response = requests.post('https://api.blooket.com/api/users/login', json={
-            'name': username,
-            'password': password
+            'name': Henryme1,
+            'password': Henry123
         }, headers=headers).json()
 
         if response['success']:
